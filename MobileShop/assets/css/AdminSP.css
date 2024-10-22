@@ -1,0 +1,88 @@
+﻿
+form-container {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+label {
+    width: 150px; 
+    margin-right: 20px;
+}
+
+input[type="text"],input[type="file"], textarea {
+    width:500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    resize:none;
+}
+
+.checksp{
+    color:red;
+    margin-left:12px;
+}
+
+.form-btn {
+    text-align: center;
+}
+
+.btnSua,.btnThem,.btnXoa,.btnHuy {
+    padding: 10px 20px;
+    margin: 4px;
+    border: none;
+    background-color: #00483d;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+table {
+    border-collapse: collapse;
+    text-align:center;
+    margin: 16px 0;
+}
+
+.products{
+    display:flex;
+}
+td,table{
+    border:1px solid #000;
+    
+}
+td{
+    padding:8px;
+}
+
+img{
+    width:80%;
+    object-fit:cover;
+}
+
+h2{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:16px;
+}
+
+table a {
+    background: #00483d;
+    color:#fff;
+    border-radius:8px;
+    padding: 8px;
+}

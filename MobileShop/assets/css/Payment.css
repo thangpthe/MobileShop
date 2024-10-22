@@ -1,0 +1,123 @@
+﻿/* CSS cho trang thanh toán */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Checkout form */
+.checkout-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Billing details */
+.billing-details {
+    width: 50%;
+}
+
+    .billing-details h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+/* Payment methods */
+.payment-methods {
+    width: 50%;
+}
+
+    .payment-methods h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .payment-methods .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .payment-methods input[type="radio"] {
+        margin-right: 10px;
+    }
+
+/* Order summary */
+.order-summary {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+    .order-summary h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+    .summary-item.total {
+        font-weight: bold;
+    }
+
+    .summary-item .price {
+        color: #28a745;
+        font-size: 1.2rem;
+    }
+
+.btn-checkout {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+    .btn-checkout:hover {
+        background-color: #218838;
+    }

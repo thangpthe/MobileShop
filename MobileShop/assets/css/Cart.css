@@ -1,0 +1,76 @@
+﻿/* Cart page styles */
+.cart-page {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+    .cart-page h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Style cho thẻ thead */
+
+
+thead th {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Style cho các dòng sản phẩm trong tbody */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6rem;
+}
+
+/* Style hình ảnh sản phẩm */
+img {
+    width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Style cho từng cột */
+td:nth-child(1) {
+    width: 100px;
+}
+
+td:nth-child(2) {
+    font-weight: 600;
+    width: 35%;
+}
+
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5) {
+    text-align: center;
+}
+
+/* Style khi hover vào dòng sản phẩm */
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Style tổng giá tiền */
+#totalPrice {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
