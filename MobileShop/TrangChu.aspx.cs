@@ -12,25 +12,102 @@ namespace MobileShop
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //User user = (User)Session["User"];
-            //if (user != null)
-            //{
-            //    lblUsername.Text = "Xin chào " + user.TaiKhoan.ToString();
-            //    btnLogOut.Visible = true;
-
-            //    // Hiển thị phần quản lý sản phẩm nếu tài khoản là admin
-            //    adminsp.InnerText = user.TaiKhoan == "admin" ? "Quản lý sản phẩm" : "";
-            //}
-            //else
-            //{
-            //    lblUsername.Text = "Đăng nhập";
-            //}
+            List<Product> products = (List<Product>)Application["Products"];
             User user = (User)Session["User"];
             if (!IsPostBack)
             {
                 checkLogin(user);
             }
 
+
+            //check xem ấn chi tiết sản phẩm
+            if (prDetail.Value != "" && themvaogiohang.Value == "")
+            {
+                foreach (Product pr in products)
+                {
+                    if (prDetail.Value == pr.ID)
+                    {
+                        Session["Product"] = pr;
+                        prDetail.Value = "";
+                        themvaogiohang.Value = "";
+                        Response.Redirect("ChiTietSanPham.aspx");
+                    }
+                }
+            }
+
+            //check xem ấn thêm vào giỏ hàng
+            if (themvaogiohang.Value == "1")
+            {
+                if (user.TaiKhoan == null)
+                {
+                    Response.Redirect("DangNhap.aspx");
+                    themvaogiohang.Value = "";
+                }
+                else
+                {
+                    addToCart();
+                }
+            }
+        }
+
+        public void addToCart()
+        {
+            List<Product> prList = (List<Product>)Application["Products"];
+            User user = (User)Session["User"];
+
+            foreach (Product pr in prList)
+            {
+                if (pr.ID == prDetail.Value)
+                {
+                    HttpCookie userCartCookie = Request.Cookies[user.TaiKhoan];
+
+                    // Nếu cookie giỏ hàng chưa tồn tại, tạo mới
+                    if (userCartCookie == null || string.IsNullOrEmpty(userCartCookie.Value))
+                    {
+                        string newItem = prDetail.Value + "-1"; // idsp-số lượng
+                        Response.Cookies[user.TaiKhoan].Value = newItem;
+                        Response.Cookies[user.TaiKhoan].Expires = DateTime.Now.AddDays(15); // Lưu cookie giỏ hàng trong 15 ngày
+                    }
+                    else
+                    {
+                        string cart = userCartCookie.Value;
+                        string[] cartItems = cart.Split('_');
+                        List<string> updateCart = new List<string>();
+                        bool productExist = false;
+
+                        foreach (string item in cartItems)
+                        {
+                            string[] itemInfo = item.Split('-');
+                            string itemID = itemInfo[0];
+                            int itemQuantity = int.Parse(itemInfo[1]);
+
+                            // Nếu sản phẩm đã có trong giỏ, tăng số lượng
+                            if (itemID == prDetail.Value)
+                            {
+                                itemQuantity += 1;
+                                productExist = true;
+                            }
+
+                            // Cập nhật giỏ hàng
+                            updateCart.Add(itemID + "-" + itemQuantity);
+                        }
+
+                        // Nếu sản phẩm chưa có trong giỏ hàng, thêm sản phẩm mới
+                        if (!productExist)
+                        {
+                            updateCart.Add(prDetail.Value + "-1");
+                        }
+
+                        // Cập nhật lại giá trị cookie giỏ hàng
+                        Response.Cookies[user.TaiKhoan].Value = string.Join("_", updateCart);
+                    }
+
+                    // Làm sạch các trường
+                    themvaogiohang.Value = "";
+                    prDetail.Value = "";
+                    Response.Redirect("DienThoai.aspx");
+                }
+            }
         }
 
         protected void checkLogin(User user)

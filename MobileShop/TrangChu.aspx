@@ -186,7 +186,9 @@
 
                         </div>
                         <div class="right">
-                            <img src="./assets/img/Mobile/s24-ultra-vang_638409930027889246.png" alt="Banner" />
+                            <a href="DienThoai.aspx" onclick="location.href='ChiTietSanPham.aspx?id=001';">
+                                <img src="./assets/img/Mobile/s24-ultra-vang_638409930027889246.png" alt="Banner" />
+                            </a>
                         </div>
                     </div>
                     <div class="categories-item">
@@ -207,7 +209,9 @@
 
                         </div>
                         <div class="right">
-                            <img src="./assets/img/Tablet/ipadgen9.jpg" alt="Banner" />
+                            <a href="MayTinhBang.aspx">
+                                <img src="./assets/img/Tablet/ipadgen9.jpg" alt="Banner" />
+                            </a>
                         </div>
                     </div>
                     <div class="categories-item">
@@ -228,7 +232,9 @@
 
                         </div>
                         <div class="right">
-                            <img src="./assets/img/Accessories/op-lung-magsafe-iphone-15-pro-max-nhua-trong-apple-mt233-thumb-650x650.png" alt="Banner" />
+                            <a href="PhuKien.aspx">
+                                <img src="./assets/img/Accessories/op-lung-magsafe-iphone-15-pro-max-nhua-trong-apple-mt233-thumb-650x650.png" alt="Banner" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -236,165 +242,6 @@
         </section>
    
          <!--Popular  -->
-        <section class="popular">
-            <div class="container">
-                <div class="top popular-top">
-                    <h2 class="popular-heading">Sản phẩm nổi bật</h2>
-                </div>
-
-                <div class="popular-content">
-                    <div class="popular-list">
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/Mobile/s24-ultra-vang_638409930027889246.png"
-                                    alt="Samsung-Galaxy-S24-Ultra" />
-                            </a>
-                            <a href="#!">Samsung Galaxy S24 Ultra</a>
-                            <span>
-                                <strong>29,990,000</strong>
-                            </span>
-                            
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/Mobile/15-pro-max-xanh-2.png"
-                                    alt="Iphone 15 Promax" />
-                            </a>
-                            <a href="#!">Iphone 15 Promax</a>
-                            <span>
-                                <strong>26,690,000</strong>
-                            </span>
-                            
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img src="./assets/img/Tablet/ipadgen9.jpg" alt="Ipad Gen 9" />
-                            </a>
-                            <a href="#!">Ipad Gen 9</a>
-                            <span>
-                                <strong>6,990,000</strong>
-                            </span>
-                           
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img src="./assets/img/Accessories/66681_gia_treo_man_hinh_north_bayou_g40.jpg" alt="Giá treo màn hình" />
-                            </a>
-                            <a href="#!">Giá treo màn hình</a>
-                            <span>
-                                <strong>399,000</strong>
-                            </span>
-                            
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img src="./assets/img/Accessories/sacduphong.jpg" alt="Sạc dự phòng" />
-                            </a>
-                            <a href="#!">Sạc dự phòng</a>
-                            <span>
-                                <strong>330,000</strong>
-                            </span>
-                            
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img src="./assets/img/Tablet/samsung-galaxy-tab-a7.jpg" alt="Samsung Galaxy Tab A7" />
-                            </a>
-                            <a href="#!">Samsung Galaxy Tab A7</a>
-                            <span>
-                                <strong>7,990,000</strong>
-                            </span>
-                            
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img src="./assets/img/Tablet/xiaomi-pad-6.jpg" alt="Xiaomi Pad 6" />
-                            </a>
-                            <a href="#!">Xiaomi Pad 6</a>
-                            <span>
-                                <strong>8,990,000</strong>
-                            </span>
-                           
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/Mobile/oppo-a78-xanh-thumb-1-600x600.jpg"
-                                    alt="Oppo A78" />
-                            </a>
-                            <a href="#!">Oppo A78</a>
-                            <span>
-                                <strong>6,990,000</strong>
-                            </span>
-                            
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img src="./assets/img/Accessories/sacnhanh15w.jpg" alt="Sạc Samsung 15W" />
-                            </a>
-                            <a href="#!">Sạc Samsung 15W</a>
-                            <span>
-                                <strong>150,000</strong>
-                            </span>
-                            
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/Accessories/op-lung-magsafe-iphone-15-pro-max-nhua-trong-apple-mt233-thumb-650x650.png"
-                                    alt="Ốp lưng Magsafe" />
-                            </a>
-                            <a href="#!">Ốp lưng Magsafe</a>
-                            <span>
-                                <strong>1,140,000</strong>
-                            </span>
-                            
-                            <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Popular 2 - sản phẩm nổi bật -->
         <section class="popular">
@@ -405,79 +252,70 @@
 
                 <div class="popular-content">
                     <div class="popular-list">
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/Mobile/s24-ultra-vang_638409930027889246.png"
-                                    alt="Samsung-Galaxy-S24-Ultra" />
-                            </a>
-                            <a href="#!">Samsung Galaxy S24 Ultra</a>
+                        <div class="popular-item" id="001" onclick="product_click(this.id)">
+                            <img src="./assets/img/Mobile/s24-ultra-vang_638409930027889246.png" alt="Samsung-Galaxy-S24-Ultra" />                                
+                            <input type="hidden" value="001" />
+                            <h3>Samsung Galaxy S24 Ultra</h3>
                             <span>
                                 <strong>29,990,000</strong>
                             </span>
                             
                             <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <button value="001" onclick="cart_click(this.value)"><i class="fa-solid fa-cart-shopping"></i></button>
                             </div>
                         </div>
 
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/Mobile/15-pro-max-xanh-2.png"
-                                    alt="Iphone 15 Promax" />
-                            </a>
-                            <a href="#!">Iphone 15 Promax</a>
+                        <div class="popular-item" id="009" onclick="product_click(this.id)">
+                             <img  src="./assets/img/Mobile/15-pro-max-xanh-2.png" alt="Iphone 15 Promax" />  
+                            <input type="hidden" value="009" />
+                            <h3>Iphone 15 Promax</h3>
                             <span>
                                 <strong>26,690,000</strong>
                             </span>
                             
                             <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <button value="009" onclick="cart_click(this.value)"><i class="fa-solid fa-cart-shopping"></i></button>
                             </div>
                         </div>
 
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img src="./assets/img/Tablet/ipadgen9.jpg" alt="Ipad Gen 9" />
-                            </a>
-                            <a href="#!">Ipad Gen 9</a>
+                        <div class="popular-item" id="010" onclick="product_click(this.id)">
+                            
+                             <img src="./assets/img/Tablet/ipadgen9.jpg" alt="Ipad Gen 9" />
+                            <input type="hidden" value="010"/>
+                            <h3>Ipad Gen 9</h3>
                             <span>
                                 <strong>6,990,000</strong>
                             </span>
                             
                             <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <button value="010" onclick="cart_click(this.value)"><i class="fa-solid fa-cart-shopping"></i></button>
                             </div>
                         </div>
 
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img src="./assets/img/Tablet/xiaomi-pad-6.jpg" alt="Xiaomi Pad 6" />
-                            </a>
-                            <a href="#!">Xiaomi Pad 6</a>
+                        <div class="popular-item" id="016" onclick="product_click(this.id)">
+                            <img src="./assets/img/Tablet/xiaomi-pad-6.jpg" alt="Xiaomi Pad 6" />
+                            <input type="hidden" value="016"/>
+                            <h3>Xiaomi Pad 6</h3>
                             <span>
                                 <strong>8,990,000</strong>
                             </span>
                             
                             <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <button value="016" onclick="cart_click(this.value)"><i class="fa-solid fa-cart-shopping"></i></button>
                             </div>
                         </div>
 
-                        <div class="popular-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/img/Accessories/op-lung-magsafe-iphone-15-pro-max-nhua-trong-apple-mt233-thumb-650x650.png"
-                                    alt="Ốp lưng Magsafe" />
-                            </a>
-                            <a href="#!">Ốp lưng Magsafe</a>
+                        <div class="popular-item" id="020" onclick="product_click(this.id)">
+                            
+                            <img src="./assets/img/Accessories/op-lung-magsafe-iphone-15-pro-max-nhua-trong-apple-mt233-thumb-650x650.png" alt="Ốp lưng Magsafe" />
+                            <input type="hidden" value="020"/>
+                            <h3>Ốp lưng Magsafe</h3>
                             <span>
                                 <strong>1,140,000</strong>
                             </span>
                             
                             <div class="product-cta">
-                                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <button value="020" onclick="cart_click(this.value)"><i class="fa-solid fa-cart-shopping"></i></button>
                             </div>
                         </div>
                     </div>
@@ -580,6 +418,7 @@
         </footer>
 
         <script src="./assets/js/index.js"></script>
+        <script src="./assets/js/product.js"></script>
     </form>
 </body>
 </html>

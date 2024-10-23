@@ -108,7 +108,7 @@ header{
 }
 
     .search input[type="text"] {
-        width: 500px;
+        width: 600px;
         padding: 12px 20px;
         border: solid 1px #c9c9c9;
         border-radius: 24px;
@@ -140,7 +140,7 @@ header{
 .user{
     display: flex;
     align-items: center;
-    margin: 0 64px;
+    margin: 0 128px;
 }
 
 
@@ -348,6 +348,7 @@ header{
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items:center;
     justify-content: center;
     height: 300px;
     padding-bottom: 20px;
@@ -365,7 +366,7 @@ header{
 }
 
 
-.popular-item a:nth-child(2){
+.popular-item h3{
     font-weight: 600;
     display: block;
     margin-top: 12px;
@@ -382,14 +383,6 @@ header{
     font-weight: 700;
 }
 
-.popular-item span del{
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.product-rating img{
-    width: 70px;
-}
 
 /* Buy Now */
 .product-cta{

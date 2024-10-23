@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./assets/css/Cart.css"/>
 </head>
 <body>
-    <form id="giohang" runat="server" method="get">
+    <form id="formgiohang" runat="server" method="post">
+        <input type="hidden" id="huysp" value="" name="huysp" runat="server" />
+        <input type="hidden" id="chinhsoluong" value="" name="chinhsoluong" runat="server" />
         <header class="header">
             <!-- Header top -->
             <div class="header-top">
@@ -111,41 +113,7 @@
                 <%-- Mẫu giao diện --%>
                 <div class="cart-items" id="tableCart" runat="server">
                    
-                   <%-- <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Sản phẩm</th>
-                                <th>Giá</th>
-                                <th>Số lượng</th>
-                                <th>Thành tiền</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-
-                        </tbody>
-                    </table>--%>
-
-                    <!-- Item sản phẩm khác -->
-                   <%-- <div class="cart-item">
-                        <img src="" alt="Sản phẩm 2" class="cart-item-img"/>
-                        <div class="cart-item-info">
-                            <h3 class="cart-item-name">Máy tính bảng Samsung Galaxy</h3>
-                            <p class="cart-item-price">10.000.000 VND</p>
-                        </div>
-
-                        <div class="cart-item-quantity">
-                            <label for="quantity2">Số lượng</label>
-                            <input type="number" id="quantity2" name="quantity" value="1" min="1" class="cart-item-qty">
-                        </div>
-
-                        <div class="cart-item-remove">
-                            <button class="btn-remove">Xóa</button>
-                        </div>
-                    </div>--%>
-
-                    <!-- Tổng tiền -->
+                   
                     
                 </div>
                 
@@ -229,5 +197,6 @@
             </div>
         </footer>
     </form>
+    <script src="./assets/js/product.js"></script>
 </body>
 </html>

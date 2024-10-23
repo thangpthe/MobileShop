@@ -61,6 +61,10 @@ td:nth-child(5) {
     text-align: center;
 }
 
+tbody button{
+    border:none;
+}
+
 /* Style khi hover vào dòng sản phẩm */
 tbody tr:hover {
     background-color: #f9f9f9;

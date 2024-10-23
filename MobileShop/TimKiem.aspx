@@ -54,7 +54,7 @@
                         </div>
 
                         <!-- Giỏ hàng -->
-                        <div class="cart">
+                        <div class="cart" onclick="location.href='GioHang.aspx';">
                             <!-- icon -->
                             <a href="#!">
                                 <i class="fa-solid fa-cart-shopping"></i>

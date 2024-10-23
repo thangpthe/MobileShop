@@ -63,11 +63,7 @@ namespace MobileShop
             prName.InnerText = showProduct.TenSP;
             prPrice.InnerText = formatCurrency(showProduct.Giatien);
             prDesribe.InnerText = showProduct.Mota;
-            prOrder.InnerHtml = 
-                    "<button class=\"add-to-cart-btn\" onclick=\"addtocart_click()\">"
-                    + "<span>Thêm vào giỏ hàng</span>"
-                    + "<i class=\"fa-solid fa-cart-shopping\"></i>"
-                    + "</button>";
+            
 
             //Hiện sản phẩm liên quan (5sp)
             string output = "";
