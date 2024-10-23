@@ -30,7 +30,7 @@ namespace MobileShop
             List<Product> prList = (List<Product>)Application["Products"];
             string[]cartItems = cookie.Split('_');
             int total = 0;
-            string output =  "<table><thead><tr><th></th><th>Sản phẩm</th><th>Giá tiền</th><th>Số lượng</th><th>Đơn giá</th><th></th></tr></thead>";
+            string output =  "<table><thead><tr><th></th><th>Sản phẩm</th><th>Giá tiền</th><th>Số lượng</th><th>Thành tiền</th><th></th></tr></thead>";
             foreach (string cartItem in cartItems)
             {
                 string []sp = cartItem.Split('-');//sp[0] id sản phẩm ,sp[1] số lượng
@@ -118,6 +118,7 @@ namespace MobileShop
                 Response.Cookies[user.TaiKhoan].Value = newcookie;
                 showCart(newcookie);
                 chinhsoluong.Value = "";
+                Response.Redirect("GioHang.aspx#cardSummary");
             }
         }
 

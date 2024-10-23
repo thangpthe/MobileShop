@@ -122,7 +122,7 @@
                             <p id="prDesribe" runat="server">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt eos incidunt, quidem reprehenderit porro libero eveniet iusto natus deleniti veniam. Distinctio, aliquid ducimus magnam adipisci vero reiciendis temporibus. Quos consequuntur doloremque id impedit voluptatem sapiente nisi ab nobis, laborum molestias? Maxime, similique! Ratione rem dignissimos, facilis ipsa commodi odio!</p>
                             <div class="product-order">
                               <input type="number" id="soluong" name="soluong" min="1" value="1" onchange="nhapsoluong(this.value)" runat="server"/>
-                              <button class="add-to-cart-btn" value="">
+                              <button class="add-to-cart-btn" onclick="addtocart_click()">
                                 <i class="fa-solid fa-cart-shopping" ></i>
                                 <span>Thêm vào giỏ hàng</span>
                               </button>

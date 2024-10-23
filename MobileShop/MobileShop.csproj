@@ -2210,6 +2210,7 @@
     <Content Include="assets\img\Tablet\xiaomi-pad-6.jpg" />
     <Content Include="assets\img\Tablet\xiaomi-pad-se.jpg" />
     <Content Include="assets\js\adminsp.js" />
+    <Content Include="assets\js\cart.js" />
     <Content Include="assets\js\index.js" />
     <Content Include="assets\js\product.js" />
     <Content Include="assets\js\validator.js" />

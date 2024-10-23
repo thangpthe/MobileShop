@@ -240,10 +240,8 @@
                 </div>
             </div>
         </section>
-   
-         <!--Popular  -->
 
-        <!-- Popular 2 - sản phẩm nổi bật -->
+        <!-- Popular  - sản phẩm nổi bật -->
         <section class="popular">
             <div class="container">
                 <div class="top popular-top">

@@ -105,7 +105,7 @@ namespace MobileShop
                     // Làm sạch các trường
                     themvaogiohang.Value = "";
                     prDetail.Value = "";
-                    Response.Redirect("DienThoai.aspx");
+                    Response.Redirect("TrangChu.aspx");
                 }
             }
         }

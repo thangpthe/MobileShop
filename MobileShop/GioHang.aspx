@@ -119,7 +119,9 @@
                 
                 <div class="cart-summary" id="cartSummary" runat="server">
                     <p>Tổng tiền: <strong id="totalPrice" runat="server"></strong></p>
-                    <a href="ThanhToan.apsx" class="btn-checkout">Thanh toán</a>
+                    <p>Phí vận chuyển: 0đ</p>
+
+                    <button class="btn-checkout">Thanh toán</button>
                 </div>
 
             </div>
@@ -197,6 +199,6 @@
             </div>
         </footer>
     </form>
-    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/cart.js"></script>
 </body>
 </html>
