@@ -40,15 +40,8 @@ h3{
     align-items: center;
 }
 
-.content-top .row .img-block{
-    width: 40%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    object-fit: cover;    
-}
 
-.content-top .img-block img{
+.content-top img{
     width: 300px;
     margin: 0 auto;
 }
@@ -56,19 +49,18 @@ h3{
 /* Thông tin sản phẩm */
 .content-top .product-info{
     margin: 16px 0;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
-.content-top .product-info .product-rating{
-    margin: 16px 0;
-}
-
-.product-info strong{
+.product-info .product-price{
     color: #fd475a;
     line-height: 1.5;
     font-size: 2.4rem;
 }
 
-.product-info del{
+.product-info{
     font-size: 1.6rem;
     font-weight: 400;
 }
@@ -89,6 +81,7 @@ h3{
     border-radius: 12px;
     color: #fff;
     gap: 4px;
+    font-size:1.6rem;
     width: 20%;
     padding: 12px;
     background: #FD475A;

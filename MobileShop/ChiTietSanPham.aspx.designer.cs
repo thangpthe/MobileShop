@@ -24,6 +24,33 @@ namespace MobileShop
         protected global::System.Web.UI.HtmlControls.HtmlForm chitietsp;
 
         /// <summary>
+        /// prDetail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden prDetail;
+
+        /// <summary>
+        /// add1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden add1;
+
+        /// <summary>
+        /// themvaogiohang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden themvaogiohang;
+
+        /// <summary>
         /// ButtonSearch control.
         /// </summary>
         /// <remarks>
@@ -69,49 +96,49 @@ namespace MobileShop
         protected global::System.Web.UI.HtmlControls.HtmlAnchor linkPrName;
 
         /// <summary>
-        /// product control.
+        /// prImg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl product;
+        protected global::System.Web.UI.HtmlControls.HtmlImage prImg;
 
         /// <summary>
-        /// productImg control.
+        /// prName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage productImg;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl prName;
 
         /// <summary>
-        /// productName control.
+        /// prPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl productName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl prPrice;
 
         /// <summary>
-        /// productPrice control.
+        /// prDesribe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl productPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl prDesribe;
 
         /// <summary>
-        /// productDescribe control.
+        /// prOrder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl productDescribe;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl prOrder;
 
         /// <summary>
         /// relatedList control.

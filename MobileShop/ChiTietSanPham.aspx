@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./assets/css/ProductDetail.css"/>
 </head>
 <body>
-    <form id="chitietsp" runat="server" method="get">
+    <form id="chitietsp" runat="server" method="get" enableviewstate="false">
+        <input type="hidden" id="prDetail" name="prDetail" value="" runat="server" />
+        <input type="hidden" id="add1" name="themvaogiohang" value="" runat="server" />
+        <input type="hidden" id="themvaogiohang" name="themvaogiohang" value="" runat="server" />
         <!-- Header top -->
         <header class="header">
             <!-- Header top -->
@@ -53,7 +56,7 @@
                         </div>
 
                         <!-- Giỏ hàng -->
-                        <div class="cart">
+                        <div class="cart" onclick="location.href='GioHang.aspx;'">
                             <!-- icon -->
                             <a href="#!">
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -109,20 +112,18 @@
 
             <section class="main-content">
                 <div class="content-top">
-                    <div class="row" id="product" runat="server">
-                        <div class="img-block">
-                            <img src="./assets/img/Mobile/iphone16pro.jpeg" alt="" id="productImg" runat="server"/>
-                        </div>
+                    <div class="row">
+                         <img src="./assets/img/Mobile/iphone16pro.jpeg" alt="" id="prImg" runat="server"/>
                         <div class="product-info">
-                            <h2 class="product-name" id="productName" runat="server">Iphone 16 Pro</h2>
-                            <span class="product-price" id="productPrice" runat="server">
+                            <h2 class="product-name" id="prName" runat="server">Iphone 16 Pro</h2>
+                            <span class="product-price" id="prPrice" runat="server">
                                 4,390,000
                             </span>
-                            <p id="productDescribe" runat="server">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt eos incidunt, quidem reprehenderit porro libero eveniet iusto natus deleniti veniam. Distinctio, aliquid ducimus magnam adipisci vero reiciendis temporibus. Quos consequuntur doloremque id impedit voluptatem sapiente nisi ab nobis, laborum molestias? Maxime, similique! Ratione rem dignissimos, facilis ipsa commodi odio!</p>
-                            <div class="product-order">
-                              <button href="#!" class="buy-now-btn">Mua ngay</button>
-                              <button class="add-to-cart-btn">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                            <p id="prDesribe" runat="server">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt eos incidunt, quidem reprehenderit porro libero eveniet iusto natus deleniti veniam. Distinctio, aliquid ducimus magnam adipisci vero reiciendis temporibus. Quos consequuntur doloremque id impedit voluptatem sapiente nisi ab nobis, laborum molestias? Maxime, similique! Ratione rem dignissimos, facilis ipsa commodi odio!</p>
+                            <div class="product-order" id="prOrder" runat="server">
+                              <button href="#!" class="buy-now-btn" value="">Mua ngay</button>
+                              <button class="add-to-cart-btn" value="">
+                                <i class="fa-solid fa-cart-shopping" ></i>
                                 <span>Thêm vào giỏ hàng</span>
                               </button>
                             </div>
@@ -130,7 +131,6 @@
                     </div>
                 </div>
                 <div class="content-bottom">
-
                     <h2>Sản phẩm liên quan</h2>
                     <div class="related-product">
                         <div class="related-list" id="relatedList" runat="server">
