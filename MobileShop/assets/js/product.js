@@ -23,5 +23,10 @@ function addtocart_click() {
     add.value = "1";
 }
 
+function toggleMenu() {
+    const navigation = document.querySelector('.navigation');
+    navigation.classList.toggle('show');
+}
+
 
 

@@ -73,6 +73,7 @@
     <Content Include="assets\css\Payment.css" />
     <Content Include="assets\css\Product.css" />
     <Content Include="assets\css\ProductDetail.css" />
+    <Content Include="assets\css\responsive.css" />
     <Content Include="assets\css\SignIn.css" />
     <Content Include="assets\css\SignUp.css" />
     <Content Include="assets\css\style.css" />

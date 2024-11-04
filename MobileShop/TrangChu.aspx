@@ -5,9 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css"/>
 </head>
 <body>
     <form id="trangchu" runat="server" method="post">
@@ -37,6 +39,7 @@
                                 </asp:LinkButton>
                             </div>
                         </div>
+                        
                         <!-- Đăng ký đăng nhập -->
                         <div class="user">
                             <div class="btn-action">
@@ -100,7 +103,57 @@
                 </nav>
             </div>
         </header>
+        <%-- Responsive --%>
+        <header class="header-responsive">
+            <div class="header-top-responsive">
+                <div class="icon" onclick="toggleMenu()">
+                    <i class="fa-solid fa-equals"></i>
+                </div> 
+                <a href="TrangChu.aspx">
+                    <img
+                        src="./assets/logo/logo.png"
+                        alt="Logo"
+                        class="logo-img" />
+                </a>
+                
 
+                <div class="cart" onclick="location.href='GioHang.aspx';">
+                    <!-- icon -->
+                    <a href="#!">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+                <ul class="navigation">
+                    <li>
+                        <a href="DienThoai.aspx">Điện thoại
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MayTinhBang.aspx">Máy tính bảng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PhuKien.aspx">Phụ kiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Blog.aspx">Blog
+                        </a>
+                    </li>
+                </ul>
+
+                
+            </div>
+            <div class="search">
+                <div class="search-bar">
+                    <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
+                    <asp:LinkButton runat="server" OnClick="searchProduct" CssClass="btnsearch" ID="LinkButton1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </asp:LinkButton>
+                </div>
+            </div>
+            
+        </header>
         <button class="backToTop" onclick="backTop();">
             <div class="iconBack">
                 <i class="fa-solid fa-chevron-up"></i>

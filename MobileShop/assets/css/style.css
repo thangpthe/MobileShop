@@ -40,6 +40,10 @@ body{
     scroll-behavior: smooth;
 }
 
+.header-responsive{
+    display:none;
+}
+
 /* common */
 .container{
     margin: 0 auto;
@@ -90,7 +94,6 @@ header{
 /* logo */
 .logo{
     margin-left: 0;
-    height: 150px;
 }
 .logo-img{
     width: 150px;
@@ -102,18 +105,23 @@ header{
 
 /* Thanh tìm kiếm */
 
+.responsive-navbar{
+    display:none;
+}
+
 .search {
     display: inline-block;
     position: relative;
 }
 
     .search input[type="text"] {
-        width: 600px;
+        width: 500px;
         padding: 12px 20px;
         border: solid 1px #c9c9c9;
         border-radius: 24px;
         outline: none;
-        box-shadow: 0 4px 2px #ccc;
+        box-shadow: 0 2px 2px #ccc;
+        position:relative;
     }
 
 .search .btnsearch {
@@ -121,8 +129,7 @@ header{
     top: 0;
     right: 0;
     width: 40px;
-    border-radius: 50%;
-    background: #009981;
+    font-size:1.4rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -259,22 +266,22 @@ header{
     box-shadow:0 4px 16px #00000029;
     
 }
-.slider-list{
-    display: flex;
+/*.slider-list{
+    display: flex;*/
     /* overflow: hidden; */
-    left: 0;
-    top: 0;
+    /*left: 0;
+    top: 0;*/
     /* height: 100%; */
-    position: absolute;
+    /*position: absolute;
     transition: transform .25s;
-}
+}*/
 .slider-list .slider-item {
     border-radius: 20px;
     height: 100%;
     flex: 1 0 100%;   
 }
 
-.slider-list img{
+/*.slider-list img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -309,8 +316,29 @@ header{
 }
 .slider-next{
     right: 5px;
+}*/
+
+.services {
+    margin-top: 96px;
 }
 
+    .services .service-list {
+        display: flex;
+        justify-content: center;
+        column-gap: 48px;
+        margin-bottom: 96px;
+    }
+
+    .services .service {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+.service-left {
+    font-size: 4.8rem;
+    color: #009981;
+}
 
 
 /* popular */
@@ -414,7 +442,7 @@ header{
 
 .categories .categories-item{
     border-radius: 8px;
-    width: 33.3%;
+    min-width: 33.3%;
     display: flex;
     column-gap: 8px;
     box-shadow: 0 4px 6px #ccc;
@@ -479,7 +507,7 @@ header{
 }
 
 .footer-section{
-    width: 25%;
+    min-width: 25%;
 }
 
 .footer-section .title{
@@ -513,26 +541,10 @@ header{
     transition: all .2s;
 }
 
-.services{
-    margin-top: 96px;
+.menu-bottom{
+    display:none;
 }
 
-.services .service-list{
-   display: flex;
-   justify-content: center;
-   column-gap: 48px;
-   margin-bottom: 96px;
-}
-
-.services .service{
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
-}
-.service-left{
-    font-size: 4.8rem;
-    color: #009981;
-}
 
 /* Email-register */
 .email-register{

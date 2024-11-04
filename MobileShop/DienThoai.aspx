@@ -5,10 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Điện thoại</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/Product.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css"/>
 </head>
 <body>
     <form id="dienthoai" runat="server">
@@ -22,7 +24,7 @@
                         <div class="logo">
                             <a href="TrangChu.aspx">
                                 <img
-                                    src="./assets/logo/logo.png"
+                                    src="./assets/logo/logo1.png"
                                     alt="Logo"
                                     class="logo-img" />
                             </a>
@@ -103,6 +105,42 @@
                     <i class="fa-solid fa-chevron-up"></i>
                 </div>
             </button>
+        </header>
+        <header class="header-responsive">
+            <div class="header-top-responsive">
+                <div class="icon" onclick="toggleMenu()">
+                    <i class="fa-solid fa-equals"></i>
+                </div>
+                <a href="TrangChu.aspx">
+                    <img
+                        src="./assets/logo/logo1.png"
+                        alt="Logo"
+                        class="logo-img" />
+                </a>
+
+                <ul class="navigation">
+                    <li>
+                        <a href="DienThoai.aspx">Điện thoại
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MayTinhBang.aspx">Máy tính bảng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PhuKien.aspx">Phụ kiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Blog.aspx">Blog
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+           
+
         </header>
     <main>
       <div class="container">
@@ -269,6 +307,29 @@
         </div>
       </div>
     </footer>
+
+
+    <!--Menu bottom-->
+        <div class="menu-bottom">
+            <div class="menu-bottom-container">
+                <a class="menu-item" href="DangNhap.aspx">
+                    <i class="fa-regular fa-user"></i>
+                    Tài khoản
+                </a>
+                <div class="menu-item">
+                    <i class="fa-solid fa-filter"></i>
+                    Lọc sản phẩm
+                </div>
+                <div class="menu-item">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                    Tìm kiếm
+                </div>
+                <a class="menu-item" onclick="location.href='GioHang.aspx';">         
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Giỏ hàng
+                </a>
+            </div>
+        </div>
     </form>
     
     <script src="./assets/js/product.js"></script>
