@@ -23,3 +23,12 @@ var huysp = document.getElementById("huysp");
 function remove_sp(clicked_value) {
     huysp.value = clicked_value;
 }
+
+const sidebar = document.querySelector('.sidebar');
+function toggleMenu() {
+    sidebar.classList.toggle('show');
+}
+
+function cancel() {
+    sidebar.classList.remove('show');
+}

@@ -18,8 +18,11 @@ function backTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
+const sidebar = document.querySelector('.sidebar');
 function toggleMenu() {
-    const navigation = document.querySelector('.navigation');
-    navigation.classList.toggle('show');
+    sidebar.classList.toggle('show');
+}
+
+function cancel() {
+    sidebar.classList.remove('show');
 }

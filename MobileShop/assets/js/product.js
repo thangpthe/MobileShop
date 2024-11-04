@@ -24,9 +24,10 @@ function addtocart_click() {
 }
 
 function toggleMenu() {
-    const navigation = document.querySelector('.navigation');
-    navigation.classList.toggle('show');
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('show');
 }
 
-
-
+function cancel() {
+    sidebar.classList.remove('show');
+}

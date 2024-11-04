@@ -23,7 +23,7 @@
                         <div class="logo">
                             <a href="TrangChu.aspx">
                                 <img
-                                    src="./assets/logo/logo.png"
+                                    src="./assets/logo/ptmobile.png"
                                     alt="Logo"
                                     class="logo-img" />
                             </a>
@@ -111,48 +111,12 @@
                 </div> 
                 <a href="TrangChu.aspx">
                     <img
-                        src="./assets/logo/logo.png"
+                        src="./assets/logo/ptmobile.png"
                         alt="Logo"
                         class="logo-img" />
                 </a>
-                
-
-                <div class="cart" onclick="location.href='GioHang.aspx';">
-                    <!-- icon -->
-                    <a href="#!">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </div>
-                <ul class="navigation">
-                    <li>
-                        <a href="DienThoai.aspx">Điện thoại
-                        </a>
-                    </li>
-                    <li>
-                        <a href="MayTinhBang.aspx">Máy tính bảng
-                        </a>
-                    </li>
-                    <li>
-                        <a href="PhuKien.aspx">Phụ kiện
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Blog.aspx">Blog
-                        </a>
-                    </li>
-                </ul>
-
-                
+                              
             </div>
-            <div class="search">
-                <div class="search-bar">
-                    <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
-                    <asp:LinkButton runat="server" OnClick="searchProduct" CssClass="btnsearch" ID="LinkButton1">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </asp:LinkButton>
-                </div>
-            </div>
-            
         </header>
         <button class="backToTop" onclick="backTop();">
             <div class="iconBack">
@@ -468,6 +432,64 @@
             </div>
         </footer>
 
+        <!-- Sidebar-->
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img src="./assets/logo/ptmobile.png" alt="logo" />
+                <button onclick="cancel()"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="sidebar-content">
+                <!--search-->
+                <div class="search">
+                    <div class="search-bar">
+                        <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
+                        <asp:LinkButton runat="server" OnClick="searchProduct" CssClass="btnsearch" ID="LinkButton1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        </asp:LinkButton>
+                    </div>
+                </div>
+                <!--navigation-->
+                <ul class="navigation">
+                    <li>
+                        <a href="DienThoai.aspx">Điện thoại
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MayTinhBang.aspx">Máy tính bảng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PhuKien.aspx">Phụ kiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Blog.aspx">Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Menu bottom-->
+        <div class="menu-bottom">
+            <div class="menu-bottom-container">
+                <a class="menu-item" href="DangNhap.aspx">
+                    <i class="fa-regular fa-user"></i>
+                    Tài khoản
+                </a>
+                <div class="menu-item">
+                    <i class="fa-solid fa-filter"></i>
+                    Lọc sản phẩm
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Tìm kiếm
+                </div>
+                <a class="menu-item" onclick="location.href='GioHang.aspx';">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Giỏ hàng
+                </a>
+            </div>
+        </div>
         <script src="./assets/js/index.js"></script>
         <script src="./assets/js/product.js"></script>
     </form>

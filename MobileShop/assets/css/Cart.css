@@ -89,21 +89,18 @@ tbody tr:hover {
     margin: 32px 0;
 }
 
-.cart-summary p{
-    font-weight:600;
-
-}
+    .cart-summary p {
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-top: 16px;
+        margin-left: -94px;
+    }
 
 #totalPrice {
     margin-top: 20px;
     font-size: 1.6rem;
     font-weight: 600;
     color: #fd475a;
-}
-p {
-    font-size: 1.6rem;
-    margin-top: 16px;
-    margin-left: -94px;
 }
 
 .cart-summary button {

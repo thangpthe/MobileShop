@@ -24,7 +24,7 @@
                         <div class="logo">
                             <a href="TrangChu.aspx">
                                 <img
-                                    src="./assets/logo/logo1.png"
+                                    src="./assets/logo/ptmobile.png"
                                     alt="Logo"
                                     class="logo-img" />
                             </a>
@@ -113,31 +113,10 @@
                 </div>
                 <a href="TrangChu.aspx">
                     <img
-                        src="./assets/logo/logo1.png"
+                        src="./assets/logo/ptmobile.png"
                         alt="Logo"
                         class="logo-img" />
                 </a>
-
-                <ul class="navigation">
-                    <li>
-                        <a href="DienThoai.aspx">Điện thoại
-                        </a>
-                    </li>
-                    <li>
-                        <a href="MayTinhBang.aspx">Máy tính bảng
-                        </a>
-                    </li>
-                    <li>
-                        <a href="PhuKien.aspx">Phụ kiện
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Blog.aspx">Blog
-                        </a>
-                    </li>
-                </ul>
-
-
             </div>
            
 
@@ -307,7 +286,67 @@
         </div>
       </div>
     </footer>
+    
+    <!-- Sidebar-->
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img src="./assets/logo/ptmobile.png" alt="logo"/>
+                <button onclick="cancel()"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="sidebar-content">
+                <!--search-->
+                <div class="search">
+                    <div class="search-bar">
+                        <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
+                        <asp:LinkButton runat="server" OnClick="searchProduct" CssClass="btnsearch" ID="LinkButton1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </asp:LinkButton>
+                    </div>
+                </div>
+                <!--navigation-->
+                <ul class="navigation">
+                    <li>
+                        <a href="DienThoai.aspx">Điện thoại
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MayTinhBang.aspx">Máy tính bảng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PhuKien.aspx">Phụ kiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Blog.aspx">Blog
+                        </a>
+                    </li>
+                </ul>
 
+                <div class="list-filters-responsive">
+                    <div class="list-filter">
+                        <h3>Hãng sản xuất</h3>
+                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                            <asp:ListItem Text="Apple" Value="Apple"></asp:ListItem>
+                            <asp:ListItem Text="Samsung" Value="Samsung"></asp:ListItem>
+                            <asp:ListItem Text="Xiaomi" Value="Xiaomi"></asp:ListItem>
+                            <asp:ListItem Text="Realme" Value="Realme"></asp:ListItem>
+                        </asp:CheckBoxList>
+                    </div>
+
+                    <div class="list-filter">
+                        <h3>Giá tiền</h3>
+                        <asp:CheckBoxList ID="CheckBoxList2" runat="server">
+                            <asp:ListItem Text="3 triệu - 5 triệu" Value="3000000-5000000"></asp:ListItem>
+                            <asp:ListItem Text="5 triệu - 7 triệu" Value="5000000-7000000"></asp:ListItem>
+                            <asp:ListItem Text="7 triệu - 10 triệu" Value="7000000-10000000"></asp:ListItem>
+                            <asp:ListItem Text="> 10 triệu" Value="10000000-30000000"></asp:ListItem>
+                        </asp:CheckBoxList>
+                    </div>
+                    <asp:Button CssClass="btn-filter" Text="Lọc sản phẩm" OnClick="filterProduct" runat="server" />
+                </div>
+            </div>
+        </div>
 
     <!--Menu bottom-->
         <div class="menu-bottom">
@@ -330,8 +369,7 @@
                 </a>
             </div>
         </div>
+        <script src="./assets/js/product.js"></script>
     </form>
-    
-    <script src="./assets/js/product.js"></script>
 </body>
 </html>
