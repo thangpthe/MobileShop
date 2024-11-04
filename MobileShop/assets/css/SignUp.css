@@ -1,4 +1,4 @@
-* {
+﻿* {
     box-sizing: border-box;
     /* background: #009981; */
 }
@@ -21,7 +21,7 @@ body {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 50%;
+    width: 48%;
     max-width: 100%;
     margin: 0 auto;
     transform: translateY(24px);
@@ -53,6 +53,7 @@ body {
 
 .form-input {
     display: flex;
+    align-items:center;
 }
 
     .form-input input {
@@ -62,7 +63,7 @@ body {
         border-radius: 13px;
         color: #858585;
         padding: 8px 16px;
-        width: 400px;
+        width: 440px;
     }
 
 .form-message {
@@ -118,4 +119,44 @@ body {
     position: absolute;
     top: 50%;
     right: 0;
+}
+
+/**/
+
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .form-input input {
+        padding: 8px;
+    }
+
+    .btn-signup {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .form-item {
+        margin-bottom: 15px;
+    }
+
+    .btn-signup {
+        font-size: 14px;
+        padding: 8px;
+    }
 }

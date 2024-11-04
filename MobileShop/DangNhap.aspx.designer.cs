@@ -13,5 +13,23 @@ namespace MobileShop
 
     public partial class DangNhap
     {
+
+        /// <summary>
+        /// errorusername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errorusername;
+
+        /// <summary>
+        /// errorpassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errorpassword;
     }
 }

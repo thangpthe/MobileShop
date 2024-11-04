@@ -19,31 +19,39 @@ namespace MobileShop
                 User user = new User();
                 string tentk = Request.Form["taikhoan"];
                 string mk = Request.Form["matkhau"];
-                bool check = true;
-                foreach (User u1 in userList){
-                    if (u1.TaiKhoan == tentk && u1.MatKhau == mk)
+                bool checkUser = false;
+                bool checkPassWord = false;
+                foreach (User u1 in userList)
+                {
+                    if(u1.TaiKhoan == tentk)
                     {
-                        user = u1;
-                        Session["User"] = user;
-                        check = true;
-                        break;
-                    }
-                    else
-                    {
-                        check = false;
+                        checkUser = true;
+
+                        if(u1.MatKhau == mk)
+                        {
+                            checkPassWord = true;
+                            user = u1;
+                            break;
+                        }
                     }
                 }
-                if (check)
+
+                if(checkUser && checkPassWord)
                 {
                     Session["User"] = user;
                     Session["username"] = user.TaiKhoan;
                     Response.Redirect("TrangChu.aspx");
                 }
-                else
+                //nếu tồn tại user mật khẩu sai
+                else if (checkUser && !checkPassWord)
                 {
-                    Response.Redirect("Dangnhap.aspx");
+                    errorpassword.InnerText = "Bạn nhập sai mật khẩu, vui lòng nhập lại !";
                 }
 
+                else
+                {
+                    errorusername.InnerText = "Tài khoản của bạn chưa được đăng ký!";
+                }
             }
         }
     }

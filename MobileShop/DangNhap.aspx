@@ -18,14 +18,14 @@
                     <div class="form-input">
                         <input type="text" name="taikhoan" id="taikhoan" placeholder="Nhập tài khoản"/>
                     </div>
-                    <div class="form-message"><span class="error-message" id="error-username"></span></div>
+                    <div class="form-message"><span class="error-message" id="errorusername" runat="server"></span></div>
                 </div>  
                 <div class="form-item">
                     <label for="matkhau">Mật khẩu</label>
                     <div class="form-input">
                         <input type="password" name="matkhau" id="matkhau" placeholder="Nhập mật khẩu"/>
                     </div>
-                    <div class="form-message"><span class="error-message" id="error-password" style="color:red;"></span></div>
+                    <div class="form-message"><span class="error-message" id="errorpassword" runat="server"></span></div>
                 </div>
                 
                 <button type="submit">Đăng nhập</button>

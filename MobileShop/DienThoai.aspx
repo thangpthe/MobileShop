@@ -369,7 +369,7 @@
                 </a>
             </div>
         </div>
-        <script src="./assets/js/product.js"></script>
     </form>
+        <script src="./assets/js/product.js"></script>
 </body>
 </html>

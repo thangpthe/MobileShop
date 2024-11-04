@@ -85,3 +85,7 @@ button {
         color: #00483d;
         font-weight: 500;
     }
+
+.error-message{
+    color:red;
+}
