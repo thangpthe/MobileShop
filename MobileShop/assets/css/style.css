@@ -612,3 +612,59 @@ header{
 .email-register button:hover {
     background: #fd475a;
 }
+
+/*Blog*/
+
+* {
+    box-sizing: border-box;
+}
+
+.news {
+    margin-top: 24px;
+}
+
+    .news h1 {
+        font-weight: 700;
+        font-size: 3.2rem;
+    }
+
+.news-item {
+    margin: 16px 0;
+    display: flex;
+    column-gap: 28px;
+}
+
+
+    .news-item .thumbnail img {
+        width: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+
+    .news-item .content .title {
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+
+    .news-item .content .author {
+        display: flex;
+        column-gap: 12px;
+        margin-top: 16px;
+        align-items: center;
+    }
+
+    .news-item .content .avatar {
+        width: 36px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .news-item .author-name {
+        font-weight: 500;
+    }
+
+    .sidebar,.menu-bottom{
+        display:none;
+    }

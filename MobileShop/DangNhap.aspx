@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
      <title>Đăng nhập</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon"/>
      <link rel="stylesheet" href="./assets/css/SignIn.css"/>
 </head>

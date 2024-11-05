@@ -5,101 +5,114 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Tìm kiếm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/Product.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css"/>
 </head>
 <body>
     <form id="TimKiem" runat="server">
         <input type="hidden" id="prDetail" name="prDetail" runat="server" />
         <input type="hidden" id="themvaogiohang" name="themvaogiohang" runat="server" />
         <header class="header">
-            <!-- Header top -->
-            <div class="header-top">
-                <div class="container">
-                    <div class="header-intro">
-                        <div class="logo">
-                            <a href="TrangChu.aspx">
-                                <img
-                                    src="./assets/logo/logo.png"
-                                    alt="Logo"
-                                    class="logo-img" />
-                            </a>
-                        </div>
+    <!-- Header top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="header-intro">
+                <div class="logo">
+                    <a href="TrangChu.aspx">
+                        <img
+                            src="./assets/logo/ptmobile.png"
+                            alt="Logo"
+                            class="logo-img" />
+                    </a>
+                </div>
 
-                        <!-- Thanh tìm kiếm -->
-                        <div class="search">
-                            <div class="search-bar">
-                                <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
-                                <asp:LinkButton runat="server" OnClick="searchProduct" CssClass="btnsearch" ID="ButtonSearch">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </asp:LinkButton>
-                            </div>
-                        </div>
-
-                        <!-- Đăng ký đăng nhập -->
-                        <div class="user">
-                            <div class="btn-action">
-                                <a href="DangNhap.aspx">
-                                    <i class="fa-regular fa-user"></i>
-                                </a>
-                            </div>
-                            <div class="user-info">
-                                <asp:Label ID="lblUsername" CssClass="user-info" runat="server" Text="Đăng nhập"></asp:Label>
-                            </div>
-                            <div class="user-logout">
-                                <asp:Button ID="btnLogOut" CssClass="logoutbtn" runat="server" Visible="false" Text="Đăng xuất" OnClick="Logout"></asp:Button>
-                            </div>
-                        </div>
-
-                        <!-- Giỏ hàng -->
-                        <div class="cart" onclick="location.href='GioHang.aspx';">
-                            <!-- icon -->
-                            <a href="#!">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
+                <!-- Thanh tìm kiếm -->
+                <div class="search">
+                    <div class="search-bar">
+                        <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
+                        <asp:LinkButton runat="server" CssClass="btnsearch" OnClick="searchProduct" ID="ButtonSearch">
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                        </asp:LinkButton>
                     </div>
                 </div>
-            </div>
 
-            <!-- Header bottom -->
-            <div class="header-bottom">
-                <nav class="navbar">
-                    <div class="container">
-                        <ul>
-                            <li>
-                                <a href="DienThoai.aspx">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                    Điện thoại
-                                </a>
-                            </li>
-                            <li>
-                                <a href="MayTinhBang.aspx">
-                                    <i class="fa-solid fa-tablet-screen-button"></i>
-                                    Máy tính bảng
-                                </a>
-                            </li>
-                            <li>
-                                <a href="PhuKien.aspx">
-                                    <i class="fa-solid fa-headphones"></i>
-                                    Phụ kiện
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Blog.aspx">
-                                    <i class="fa-solid fa-newspaper"></i>
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
+                    <!-- Đăng ký đăng nhập -->
+                <div class="user">
+                    <div class="btn-action">
+                        <a href="DangNhap.aspx">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
                     </div>
-                </nav>
-            </div>
-        </header>
+                    <div class="user-info">
+                        <asp:Label ID="lblUsername" CssClass="user-info" runat="server" Text="Đăng nhập"></asp:Label>
+                    </div>
+                    <div class="user-logout">
+                        <asp:Button ID="btnLogOut" CssClass="logoutbtn" runat="server" Visible="false" Text="Đăng xuất" OnClick="Logout"></asp:Button>
+                    </div>
+                </div>
+                    <!-- Giỏ hàng -->
+                    <div class="cart" onclick="location.href='GioHang.aspx';">
+                        <!-- icon -->
+                        <a href="#!">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+        </div>
+        </div>
+    </div>
 
-        <%--  --%>
+    <!-- Header bottom -->
+    <div class="header-bottom">
+        <nav class="navbar">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="DienThoai.aspx">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            Điện thoại
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MayTinhBang.aspx">
+                            <i class="fa-solid fa-tablet-screen-button"></i>
+                            Máy tính bảng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PhuKien.aspx">
+                            <i class="fa-solid fa-headphones"></i>
+                            Phụ kiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Blog.aspx">
+                            <i class="fa-solid fa-newspaper"></i>
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+        
+        <%-- <header class="header-responsive">
+    <div class="header-top-responsive">
+        <div class="icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="TrangChu.aspx">
+            <img
+                src="./assets/logo/ptmobile.png"
+                alt="Logo"
+                class="logo-img" />
+        </a>
+    </div>
+</header> --%>
         <main>
             <div class="container">
                 <asp:Label id="resultLabel" Text="" runat="server"></asp:Label>
@@ -179,6 +192,29 @@
                 </div>
             </div>
         </footer>
+
+        
+        <!--Menu bottom-->
+        <div class="menu-bottom">
+            <div class="menu-bottom-container">
+                <a class="menu-item" href="DangNhap.aspx">
+                    <i class="fa-regular fa-user"></i>
+                    Tài khoản
+                </a>
+                <div class="menu-item">
+                    <i class="fa-solid fa-filter"></i>
+                    Lọc sản phẩm
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Tìm kiếm
+                </div>
+                <a class="menu-item" onclick="location.href='GioHang.aspx';">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Giỏ hàng
+                </a>
+            </div>
+        </div>
     </form>
     <script src="./assets/js/product.js"></script>
 </body>

@@ -5,13 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Đăng ký</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/SignUp.css"/>
 </head>
 <body>
     <form method="post" autocomplete="off" runat="server" onsubmit="return validateSignUp();">
-        <div class="sign-up">
+        <div class="sign-up sign-up-responsive">
             <div class="content">
                 <h1 class="heading">Đăng ký tài khoản</h1>
                 <div class="form-item">

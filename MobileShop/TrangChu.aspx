@@ -107,7 +107,7 @@
         <header class="header-responsive">
             <div class="header-top-responsive">
                 <div class="icon" onclick="toggleMenu()">
-                    <i class="fa-solid fa-equals"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div> 
                 <a href="TrangChu.aspx">
                     <img

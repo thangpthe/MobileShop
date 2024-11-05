@@ -118,6 +118,9 @@ h3{
     background: #FD475A;
 }
 /* Content bottom */
+.related-product{
+    margin-top:16px;
+}
 .related-list{
     display: grid;
     grid-template-columns: repeat(5,1fr);
