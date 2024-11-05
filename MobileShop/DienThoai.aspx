@@ -313,28 +313,7 @@
                     </li>
                 </ul>
 
-                <div class="list-filters-responsive">
-                    <div class="list-filter">
-                        <h3>Hãng sản xuất</h3>
-                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-                            <asp:ListItem Text="Apple" Value="Apple"></asp:ListItem>
-                            <asp:ListItem Text="Samsung" Value="Samsung"></asp:ListItem>
-                            <asp:ListItem Text="Xiaomi" Value="Xiaomi"></asp:ListItem>
-                            <asp:ListItem Text="Realme" Value="Realme"></asp:ListItem>
-                        </asp:CheckBoxList>
-                    </div>
-
-                    <div class="list-filter">
-                        <h3>Giá tiền</h3>
-                        <asp:CheckBoxList ID="CheckBoxList2" runat="server">
-                            <asp:ListItem Text="3 triệu - 5 triệu" Value="3000000-5000000"></asp:ListItem>
-                            <asp:ListItem Text="5 triệu - 7 triệu" Value="5000000-7000000"></asp:ListItem>
-                            <asp:ListItem Text="7 triệu - 10 triệu" Value="7000000-10000000"></asp:ListItem>
-                            <asp:ListItem Text="> 10 triệu" Value="10000000-30000000"></asp:ListItem>
-                        </asp:CheckBoxList>
-                    </div>
-                    <asp:Button CssClass="btn-filter" Text="Lọc sản phẩm" OnClick="filterProduct" runat="server" />
-                </div>
+                
             </div>
         </div>
 

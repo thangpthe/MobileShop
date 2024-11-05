@@ -111,7 +111,7 @@ namespace MobileShop
                     // Nếu cookie giỏ hàng chưa tồn tại, tạo mới
                     if (userCartCookie == null || string.IsNullOrEmpty(userCartCookie.Value))
                     {
-                        string newItem = prDetail.Value + "-1"; // idsp-số lượng
+                        string newItem = prDetail.Value + "-" + soluong.Value; // idsp-số lượng
                         Response.Cookies[user.TaiKhoan].Value = newItem;
                         Response.Cookies[user.TaiKhoan].Expires = DateTime.Now.AddDays(15); // Lưu cookie giỏ hàng trong 15 ngày
                     }
@@ -157,65 +157,6 @@ namespace MobileShop
             }
         }
 
-        //public void addToCart1()
-        //{
-        //    Product pr = (Product)Session["Product"];
-        //    User user = (User)Session["User"];
-
-        //    if(pr.ID != null)
-        //    {
-        //        if (user.TaiKhoan != null)
-        //        {
-        //            HttpCookie userCartCookie = Request.Cookies[user.TaiKhoan];
-
-        //            // Nếu cookie giỏ hàng chưa tồn tại, tạo mới
-        //            if (userCartCookie == null || string.IsNullOrEmpty(userCartCookie.Value))
-        //            {
-        //                string newItem = prDetail.Value + "-1"; // idsp-số lượng
-        //                Response.Cookies[user.TaiKhoan].Value = newItem;
-        //                Response.Cookies[user.TaiKhoan].Expires = DateTime.Now.AddDays(15); // Lưu cookie giỏ hàng trong 15 ngày
-        //                Response.Redirect("GioHang.aspx");
-        //            }
-        //            else
-        //            {
-        //                string cart = userCartCookie.Value;
-        //                string[] cartItems = cart.Split('_');
-        //                List<string> updateCart = new List<string>();
-        //                bool productExist = false;
-
-        //                foreach (string item in cartItems)
-        //                {
-        //                    string[] itemInfo = item.Split('-');
-        //                    string itemID = itemInfo[0];
-        //                    int itemQuantity = int.Parse(itemInfo[1]);
-
-        //                    // Nếu sản phẩm đã có trong giỏ, tăng số lượng
-        //                    if (itemID == prDetail.Value)
-        //                    {
-        //                        itemQuantity += 1;
-        //                        productExist = true;
-        //                    }
-
-        //                    // Cập nhật giỏ hàng
-        //                    updateCart.Add(itemID + "-" + itemQuantity);
-        //                }
-
-        //                // Nếu sản phẩm chưa có trong giỏ hàng, thêm sản phẩm mới
-        //                if (!productExist)
-        //                {
-        //                    updateCart.Add(prDetail.Value + "-1");
-        //                }
-
-        //                // Cập nhật lại giá trị cookie giỏ hàng
-        //                Response.Cookies[user.TaiKhoan].Value = string.Join("_", updateCart);
-        //            }
-
-        //            // Làm sạch các trường
-        //            themvaogiohang.Value = "";
-        //            prDetail.Value = "";
-        //        }
-        //    }
-        //}
         public void addToCart1()
         {
             Product pr1 = (Product)Session["Product"];

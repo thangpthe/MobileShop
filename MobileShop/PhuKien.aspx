@@ -284,29 +284,7 @@
                         <a href="Blog.aspx">Blog
                         </a>
                     </li>
-                </ul>
-
-                <div class="list-filters-responsive">
-                    <div class="list-filter">
-                        <h3>Hãng sản xuất</h3>
-                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-                            <asp:ListItem Text="Apple" Value="Apple"></asp:ListItem>
-                            <asp:ListItem Text="DJI" Value="DJI"></asp:ListItem>
-                            <asp:ListItem Text="TP-Link" Value="TP-Link"></asp:ListItem>
-                            <asp:ListItem Text="Energizer" Value="Energizer"></asp:ListItem>
-                        </asp:CheckBoxList>
-                    </div>
-
-                    <div class="list-filter">
-                        <h3>Giá tiền</h3>
-                        <asp:CheckBoxList ID="CheckBoxList2" runat="server">
-                            <asp:ListItem Text="50000 - 300000" Value="50000-300000"></asp:ListItem>
-                            <asp:ListItem Text="300000 - 800000" Value="300000-800000"></asp:ListItem>
-                            <asp:ListItem Text="> 800000" Value="800000-5000000"></asp:ListItem>
-                        </asp:CheckBoxList>
-                    </div>
-                    <asp:Button CssClass="btn-filter" Text="Lọc sản phẩm" OnClick="filterProduct" runat="server" />
-                </div>
+                </ul>                
             </div>
         </div>
 

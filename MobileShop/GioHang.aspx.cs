@@ -140,6 +140,17 @@ namespace MobileShop
 
         }
 
+        protected void Checkout_Click(object sender, EventArgs e)
+        {
+            // Reset giỏ hàng
+            tableCart.InnerHtml = "";  // Xóa nội dung giỏ hàng
+            totalPrice.InnerText = "0"; // Đặt lại tổng tiền về 0
+
+            // Hiển thị thông báo đã mua hàng
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Mua hàng thành công');", true);
+        }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             checkLogin();

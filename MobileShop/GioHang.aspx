@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/Cart.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css"/>
 </head>
 <body>
@@ -136,9 +137,7 @@
                 
                 <div class="cart-summary" id="cartSummary" runat="server">
                     <p>Tổng tiền: <strong id="totalPrice" runat="server"></strong></p>
-                    <p>Phí vận chuyển: 0đ</p>
-
-                    <button class="btn-checkout">Thanh toán</button>
+                    <asp:Button ID="btnCheckout" CssClass="btn-checkout" runat="server" Text="Thanh toán" OnClick="Checkout_Click" />
                 </div>
 
             </div>

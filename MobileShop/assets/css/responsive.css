@@ -192,15 +192,6 @@
                    background:#ccc;
                 }
 
-    .sidebar .list-filters-responsive {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin-right: 20px;
-        background: #fff;
-        width: 100%;
-    }
-
     /*Chi tiết sản phẩm*/
     /*Sản phẩm liên quan*/
     .related-list{

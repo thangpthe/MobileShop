@@ -22,6 +22,12 @@ function cart_click(value) {
 function addtocart_click() {
     add.value = "1";
 }
+var sl = document.getElementById("soluong");
+function nhapsoluong(value) {
+    if (parseInt(soluong) <= 0) {
+        sl.value = "1";
+    }
+}
 
 function toggleMenu() {
     const sidebar = document.querySelector('.sidebar');

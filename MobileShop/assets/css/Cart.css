@@ -103,7 +103,7 @@ tbody tr:hover {
     color: #fd475a;
 }
 
-.cart-summary button {
+.cart-summary .btn-checkout {
     float: right;
     font-size: 1.6rem;
     background: #009981;
