@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/Cart.css"/>
     <link rel="stylesheet" href="./assets/css/responsive.css"/>
 </head>
 <body>
@@ -224,15 +223,7 @@
                 <button onclick="cancel()"><i class="fa-solid fa-x"></i></button>
             </div>
             <div class="sidebar-content">
-                <!--search-->
-                <div class="search">
-                    <div class="search-bar">
-                        <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
-                        <asp:LinkButton runat="server" OnClick="searchProduct" CssClass="btnsearch" ID="LinkButton1">
-          <i class="fa-solid fa-magnifying-glass"></i>
-                        </asp:LinkButton>
-                    </div>
-                </div>
+                
                 <!--navigation-->
                 <ul class="navigation">
                     <li>

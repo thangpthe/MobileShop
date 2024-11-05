@@ -100,19 +100,19 @@
     </div>
 </header>
         
-        <%-- <header class="header-responsive">
-    <div class="header-top-responsive">
-        <div class="icon" onclick="toggleMenu()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <a href="TrangChu.aspx">
-            <img
-                src="./assets/logo/ptmobile.png"
-                alt="Logo"
-                class="logo-img" />
-        </a>
-    </div>
-</header> --%>
+        <header class="header-responsive">
+            <div class="header-top-responsive">
+                <div class="icon" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <a href="TrangChu.aspx">
+                    <img
+                        src="./assets/logo/ptmobile.png"
+                        alt="Logo"
+                        class="logo-img" />
+                </a>
+            </div>
+        </header>
         <main>
             <div class="container">
                 <asp:Label id="resultLabel" Text="" runat="server"></asp:Label>
@@ -193,7 +193,35 @@
             </div>
         </footer>
 
-        
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img src="./assets/logo/ptmobile.png" alt="logo" />
+                <button onclick="cancel()"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="sidebar-content">
+                <!--search-->
+
+                <!--navigation-->
+                <ul class="navigation">
+                    <li>
+                        <a href="DienThoai.aspx">Điện thoại
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MayTinhBang.aspx">Máy tính bảng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PhuKien.aspx">Phụ kiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Blog.aspx">Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!--Menu bottom-->
         <div class="menu-bottom">
             <div class="menu-bottom-container">

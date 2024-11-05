@@ -266,15 +266,6 @@
                 <button onclick="cancel()"><i class="fa-solid fa-x"></i></button>
             </div>
             <div class="sidebar-content">
-                <!--search-->
-                <div class="search">
-                    <div class="search-bar">
-                        <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
-                        <asp:LinkButton runat="server" OnClick="searchProduct" CssClass="btnsearch" ID="LinkButton1">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </asp:LinkButton>
-                    </div>
-                </div>
                 <!--navigation-->
                 <ul class="navigation">
                     <li>

@@ -84,6 +84,10 @@ header{
     position: relative;
     margin-bottom:16px;
 }
+
+.header-top {
+    margin-bottom: 16px;
+}
 .header-intro{
     display: flex;
     position:relative;
@@ -668,3 +672,122 @@ header{
     .sidebar,.menu-bottom{
         display:none;
     }
+
+/*Giỏ hàng*/
+/* Cart page styles */
+.cart-page {
+    background-color: #fff;
+    padding: 40px 0;
+    margin: 64px 0 200px;
+}
+
+    .cart-page h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Style cho thẻ thead */
+
+
+thead th {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Style cho các dòng sản phẩm trong tbody */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6rem;
+}
+
+/* Style hình ảnh sản phẩm */
+img {
+    width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Style cho từng cột */
+td:nth-child(1) {
+    width: 100px;
+    font-weight: 600;
+}
+
+td:nth-child(2) {
+    font-weight: 600;
+    width: 35%;
+}
+
+tbody input {
+    width: 48px;
+    padding: 8px 0 8px 4px;
+}
+
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5) {
+    text-align: center;
+}
+
+
+td:nth-child(3), td:nth-child(5) {
+    color: #fd475a;
+    font-weight: 600;
+}
+
+td button {
+    border: none;
+}
+
+/* Style khi hover vào dòng sản phẩm */
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.cart-summary {
+    float: right;
+    margin: 32px 0;
+}
+
+    .cart-summary p {
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-top: 16px;
+        margin-left: -94px;
+    }
+
+#totalPrice {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fd475a;
+}
+
+.cart-summary button {
+    float: right;
+    font-size: 1.6rem;
+    background: #009981;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 16px 0 16px -94px;
+}
+
