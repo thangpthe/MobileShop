@@ -205,7 +205,7 @@ namespace MobileShop
                     + "<td>" + sp.Hangsx + "</td>"
                     + "<td><img src =\"" + sp.Anhsp + "\" alt=\"anh-sp\"></td>"
                     + "<td>" + formatCurrency(sp.Giatien) + "</td>"
-                    + "<td><button type=\"button\" value=\""+sp.ID+"|"+sp.TenSP+"|"+sp.Mota+"|"+sp.Loaisp+"|"+sp.Hangsx+"|"+sp.Giatien+"\" onclick=\"suasp(this.value)\">Chọn</button></td>"
+                    + "<td><button type=\"button\" value=\""+sp.ID+"|"+sp.TenSP+"|"+sp.Mota+"|"+sp.Loaisp+"|"+sp.Hangsx+"|"+sp.Giatien+ "\" onclick=\"suasp(this.value)\">Chọn</button><button class=\"btnXoa\" onclick=\"confirmDelete(this)\">Xóa</button></td>"
                     + "</tr>";
                 i++;
             }

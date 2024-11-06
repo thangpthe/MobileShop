@@ -10,7 +10,7 @@ namespace MobileShop
 {
     public partial class GioHang : System.Web.UI.Page
     {
-        protected void checkLogin()
+        protected void CheckLogin()
         {
             User user = (User)Session["User"];
             if(user.TaiKhoan != null)
@@ -24,7 +24,7 @@ namespace MobileShop
         {
             return string.Format("{0:N0}", price);
         }
-
+        //hiện sp trong giỏ hàng
         public void showCart(string cookie)
         {
             List<Product> prList = (List<Product>)Application["Products"];
@@ -56,8 +56,8 @@ namespace MobileShop
             tableCart.InnerHtml = output;
             totalPrice.InnerText = formatCurrency(total);
         }
-
-        public void removeCartItem(string cookie_value)
+        //Xóa sản phẩm khỏi giỏ hàng
+        public void RemoveCartItem(string cookie_value)
         {
             User user = (User)Session["User"];
             List<Product> products = (List<Product>)Application["Products"];
@@ -90,8 +90,8 @@ namespace MobileShop
             showCart(newcookie);
         }
 
-
-        public void updateQuantity()
+        //cập nhật số lượng
+        public void UpdateQuantity()
         {
             User user = (User)Session["User"];
             string cookie = Request.Cookies[user.TaiKhoan].Value;
@@ -122,7 +122,7 @@ namespace MobileShop
             }
         }
 
-
+        //tìm kiếm
         protected void searchProduct(object sender, EventArgs e)
         {
             List<Product> prList = (List<Product>)Application["Products"];
@@ -139,7 +139,7 @@ namespace MobileShop
             Response.Redirect("TimKiem.aspx");
 
         }
-
+        //thanh toán
         protected void Checkout_Click(object sender, EventArgs e)
         {
             // Reset giỏ hàng
@@ -153,7 +153,7 @@ namespace MobileShop
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            checkLogin();
+            CheckLogin();
             User user = (User)Session["User"];
             if (user.TaiKhoan != null)
             {
@@ -165,12 +165,12 @@ namespace MobileShop
 
                     if(huysp.Value != "")
                     {
-                        removeCartItem(cookie);
+                        RemoveCartItem(cookie);
                         huysp.Value = "";
                     }
                     if(chinhsoluong.Value != "")
                     {
-                        updateQuantity();
+                        UpdateQuantity();
                     }
                 }
             }
@@ -181,7 +181,7 @@ namespace MobileShop
                 Response.Redirect("DangNhap.aspx");
             }
         }
-
+        //Đăng xuất
         protected void Logout(object sender,EventArgs e)
         {
             Session.Abandon();

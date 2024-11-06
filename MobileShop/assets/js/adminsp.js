@@ -73,3 +73,13 @@ function suasp(click_value) {
     gia.value = sp[5];
     location.href = "#quanlysp";
 }
+//Xóa
+function confirmDelete(button) {
+    const confirmAction = confirm("Bạn có chắc chắn muốn xóa sản phẩm này?");
+    if (confirmAction) {
+        // Xóa dòng sản phẩm
+        const row = button.closest("tr"); // Lấy dòng chứa nút "Xóa" được bấm
+        row.remove();
+        alert("Sản phẩm đã được xóa!");
+    } 
+}

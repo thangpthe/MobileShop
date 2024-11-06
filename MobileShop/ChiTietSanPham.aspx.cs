@@ -16,7 +16,7 @@ namespace MobileShop
         {
             return string.Format("{0:N0}", price);
         }
-        public void showProduct()
+        public void ShowProduct()
         {
             List<Product> prList = (List<Product>)Application["Products"];
             string prId = Request.QueryString["id"]; //lấy id sản phẩm từ url 
@@ -87,7 +87,7 @@ namespace MobileShop
             relatedList.InnerHtml = output;
         }
 
-        protected void checkLogin()
+        protected void CheckLogin()
         {
             User user = (User)Session["User"];
             if (user.TaiKhoan != null)
@@ -97,7 +97,7 @@ namespace MobileShop
             }
         }
 
-        public void addToCart()
+        public void AddToCart()
         {
             List<Product> prList = (List<Product>)Application["Products"];
             User user = (User)Session["User"];
@@ -157,7 +157,7 @@ namespace MobileShop
             }
         }
 
-        public void addToCart1()
+        public void AddToCart1()
         {
             Product pr1 = (Product)Session["Product"];
             User user = (User)Session["User"];
@@ -231,7 +231,7 @@ namespace MobileShop
         {
             User user = (User)Session["User"];
             List<Product> prList = (List<Product>)Application["Products"];
-            checkLogin();
+            CheckLogin();
             if(themvaogiohang.Value == "1")
             {
                 if(user.TaiKhoan == null)
@@ -241,14 +241,14 @@ namespace MobileShop
                 }
                 else
                 {
-                    addToCart();
+                    AddToCart();
                 }
             }
-            showProduct();
+            ShowProduct();
             if(add1.Value != "")
             {
                 themvaogiohang.Value = "";
-                addToCart1();
+                AddToCart1();
             }
         }
 

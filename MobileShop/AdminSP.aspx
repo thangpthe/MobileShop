@@ -150,7 +150,6 @@
                     <div class="form-btn">
                         <asp:Button ID="btnAdd"  CssClass="btnThem" Text="Thêm"  runat="server" OnClick="themSP"/>
                         <asp:Button ID="btnUpdate" CssClass="btnSua" Text="Sửa"  runat="server" OnClick="suaSP"/>
-                        <asp:Button ID="btnDelete" CssClass="btnXoa" Text="Xóa"  runat="server"/>
                         <asp:Button ID="btnCancel" CssClass ="btnHuy" Text="Hủy" runat="server" OnClick="btnHuy_Click"/>
                     </div>
                 </div>
