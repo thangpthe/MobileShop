@@ -11,35 +11,17 @@ namespace MobileShop
 {
 
 
-    public partial class GioHang
+    public partial class ThanhToan
     {
 
         /// <summary>
-        /// formgiohang control.
+        /// thanhtoan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formgiohang;
-
-        /// <summary>
-        /// huysp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden huysp;
-
-        /// <summary>
-        /// chinhsoluong control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden chinhsoluong;
+        protected global::System.Web.UI.HtmlControls.HtmlForm thanhtoan;
 
         /// <summary>
         /// ButtonSearch control.
@@ -69,22 +51,40 @@ namespace MobileShop
         protected global::System.Web.UI.WebControls.Button btnLogOut;
 
         /// <summary>
-        /// tableCart control.
+        /// name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tableCart;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl name;
 
         /// <summary>
-        /// cartSummary control.
+        /// phone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cartSummary;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl phone;
+
+        /// <summary>
+        /// address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl address;
+
+        /// <summary>
+        /// cartitems control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cartitems;
 
         /// <summary>
         /// totalPrice control.
@@ -94,5 +94,14 @@ namespace MobileShop
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl totalPrice;
+
+        /// <summary>
+        /// thanhtoanbtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button thanhtoanbtn;
     }
 }

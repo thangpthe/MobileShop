@@ -2224,6 +2224,7 @@
     <Content Include="Global.asax" />
     <Content Include="MayTinhBang.aspx" />
     <Content Include="PhuKien.aspx" />
+    <Content Include="ThanhToan.aspx" />
     <Content Include="TimKiem.aspx" />
     <Content Include="TrangChu.aspx" />
     <Content Include="Web.config" />
@@ -2292,6 +2293,13 @@
       <DependentUpon>PhuKien.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThanhToan.aspx.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.aspx.designer.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TimKiem.aspx.cs">
       <DependentUpon>TimKiem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

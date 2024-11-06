@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GioHang.aspx.cs" Inherits="MobileShop.GioHang" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ThanhToan.aspx.cs" Inherits="MobileShop.ThanhToan" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Giỏ hàng</title>
+    <title>Thanh toán</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="./assets/logo/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css"/>
@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css"/>
 </head>
 <body>
-    <form id="formgiohang" runat="server" method="post">
-        <input type="hidden" id="huysp" value="" name="huysp" runat="server" />
-        <input type="hidden" id="chinhsoluong" value="" name="chinhsoluong" runat="server" />
+    <form id="thanhtoan" runat="server">
         <header class="header">
             <!-- Header top -->
             <div class="header-top">
@@ -34,8 +32,8 @@
                         <div class="search">
                             <div class="search-bar">
                                 <input id="search" name="search" placeholder="Tìm kiếm sản phẩm..." type="text" />
-                                <asp:LinkButton runat="server" OnClick="searchProduct" CssClass="btnsearch" ID="ButtonSearch">
-                                     <i class="fa-solid fa-magnifying-glass"></i>
+                                <asp:LinkButton runat="server" OnClick="SearchProduct" CssClass="btnsearch" ID="ButtonSearch">
+                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 </asp:LinkButton>
                             </div>
                         </div>
@@ -117,29 +115,35 @@
 
 
         </header>
-        <main class="cart-page">
+        <main class="checkout-page">
             <div class="container">
-                <h1>Giỏ hàng của bạn</h1>
+                <h1>Thông tin thanh toán</h1>
+                <div class="checkout-content">
+                    <div class="customer-info">
+                        <h2>Thông tin khách hàng</h2>
+                        <p>Họ và tên: <span id="name" runat="server"></span></p>
+                        <p>Số điện thoại: <span id="phone" runat="server"></span></p>
+                        <p>Địa chỉ nhận hàng: <span id="address" runat="server"></span></p>
+                    </div>
 
-                <!-- Giỏ hàng trống -->
-                <%--<div class="empty-cart" style="display: none;">
-                    <p>Giỏ hàng của bạn đang trống</p>
-                    <a href="index.html" class="btn">Tiếp tục mua sắm</a>
-                </div>--%>
+                    <!-- Thông tin giỏ hàng -->
+                    <div class="order-summary">
+                        <h2>Đơn hàng của bạn</h2>
+                        <div class="cart-items" id="cartitems" runat="server">
+                            <!-- Danh sách sản phẩm sẽ được lấy từ giỏ hàng và hiển thị ở đây -->
 
-                <!-- Danh sách sản phẩm trong giỏ hàng -->
-                <%-- Mẫu giao diện --%>
-                <div class="cart-items" id="tableCart" runat="server">
-                   
-                   
-                    
+                            
+                        </div>
+                        <!--<div-- class="payment-method">
+                            Phương thức thanh toán
+                            <input type="checkbox" name="" id="" />Thanh toán bằng thẻ ATM
+                            <input type="checkbox" name="" id="" />Thanh toán sau khi nhận hàng
+                        </div-->
+                        <div class="shipping-fee"><span>Phí vận chuyển:</span><span>0</span></div>
+                        <div class="order-total"><span>Tổng tiền:</span><strong id="totalPrice" runat="server"></strong></div>
+                        <asp:Button CssClass="btn-checkout" id="thanhtoanbtn" OnClick="Checkout_Click" runat="server" Text="Thanh toán"></asp:Button>
+                    </div>
                 </div>
-                
-                <div class="cart-summary" id="cartSummary" runat="server">
-                    <p>Tổng tiền: <strong id="totalPrice" runat="server"></strong></p>
-                    <a class="btn-checkout" href="ThanhToan.aspx">Mua hàng</a>
-                </div>
-
             </div>
         </main>
 
@@ -215,14 +219,14 @@
             </div>
         </footer>
 
-          <!-- Sidebar-->
+        <!-- Sidebar-->
         <div class="sidebar">
             <div class="sidebar-top">
                 <img src="./assets/logo/ptmobile.png" alt="logo" />
                 <button onclick="cancel()"><i class="fa-solid fa-x"></i></button>
             </div>
             <div class="sidebar-content">
-                
+
                 <!--navigation-->
                 <ul class="navigation">
                     <li>
@@ -245,7 +249,7 @@
             </div>
         </div>
 
-          <!--Menu bottom-->
+        <!--Menu bottom-->
         <div class="menu-bottom">
             <div class="menu-bottom-container">
                 <a class="menu-item" href="DangNhap.aspx">
@@ -267,6 +271,6 @@
             </div>
         </div>
     </form>
-    <script src="./assets/js/cart.js"></script>
+<script src="./assets/js/cart.js"></script>
 </body>
 </html>
