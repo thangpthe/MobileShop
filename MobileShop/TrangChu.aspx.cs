@@ -116,20 +116,20 @@ namespace MobileShop
             {
                 lblUsername.Text = user.TaiKhoan;
                 btnLogOut.Visible = true;
-                if (user.TaiKhoan == "admin")
-                {
-                    adminsp.InnerText = "Quản lý sản phẩm";
-                }
-                else
-                {
-                    adminsp.InnerText = "";
-                }
+                //if (user.TaiKhoan == "admin")
+                //{
+                //    adminsp.InnerText = "Quản lý sản phẩm";
+                //}
+                //else
+                //{
+                //    adminsp.InnerText = "";
+                //}
             }
             else
             {
                 lblUsername.Text = "Đăng nhập";
                 btnLogOut.Visible = false;
-                adminsp.InnerText = "";
+                //adminsp.InnerText = "";
             }
         }
         protected void Logout(object sender,EventArgs e)

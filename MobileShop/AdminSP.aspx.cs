@@ -333,33 +333,33 @@ namespace MobileShop
 
 
 
-        //public void hienUser()
-        //{
-        //    List<User> userList = (List<User>)Application["Users"];
-        //    int i = 1;
-        //    string output = "<table><thead><tr><td>STT</td><td>Họ tên</td><td>SĐT</td><td>Địa chỉ</td><td>Tài khoản</td><td>Mật khẩu</td><td>Sửa/Xóa</td></tr></thead>";
-        //    output += "<tbody>";
-        //    foreach (User u1 in userList)
-        //    {
-        //        output += "<tr><td>" + i + "</td>"
-        //            + "<td>" + u1.HoTen + "</td>"
-        //            + "<td>" + u1.Sdt + "</td>"
-        //            + "<td>" + u1.DiaChi + "</td>"
-        //            + "<td>" + u1.TaiKhoan + "</td>"
-        //            + "<td>" + u1.MatKhau + "</td>"
-        //            + "<td><a href=AdminSP.aspx?id=" + i + ">" + "Sửa" + "</a></td>"
-        //            + "</tr>";
-        //        i++;
-        //    }
-        //    output += "</tbody></table>";
-        //    hienthidanhsachuser.InnerHtml = output;
-        //}
+        public void hienUser()
+        {
+            List<User> userList = (List<User>)Application["Users"];
+            int i = 1;
+            string output = "<table><thead><tr><td>STT</td><td>Họ tên</td><td>SĐT</td><td>Địa chỉ</td><td>Tài khoản</td><td>Mật khẩu</td><td>Mã xác nhận</td></tr></thead>";
+            output += "<tbody>";
+            foreach (User u1 in userList)
+            {
+                output += "<tr><td>" + i + "</td>"
+                    + "<td>" + u1.HoTen + "</td>"
+                    + "<td>" + u1.Sdt + "</td>"
+                    + "<td>" + u1.DiaChi + "</td>"
+                    + "<td>" + u1.TaiKhoan + "</td>"
+                    + "<td>" + u1.MatKhau + "</td>"
+                    + "<td>" + u1.MaXacNhan + "</td>"
+                    + "</tr>";
+                i++;
+            }
+            output += "</tbody></table>";
+            hienthidanhsachuser.InnerHtml = output;
+        }
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             User curUser = (User)Session["User"];
-            if (curUser == null || curUser.TaiKhoan != "admin")
+            if (curUser == null)
             {
                 Response.Redirect("DangNhap.aspx");
             }                    
@@ -367,7 +367,7 @@ namespace MobileShop
             btnLogOut.Visible = true;
             hienSP();
             
-            //hienUser();
+            hienUser();
         }
 
         //Đăng xuất

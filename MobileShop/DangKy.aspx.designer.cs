@@ -96,6 +96,15 @@ namespace MobileShop
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl errorpassword;
 
         /// <summary>
+        /// errorconfirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errorconfirm;
+
+        /// <summary>
         /// success control.
         /// </summary>
         /// <remarks>

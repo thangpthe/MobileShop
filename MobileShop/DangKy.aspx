@@ -40,7 +40,6 @@
                 </div>
                 
                 <div class="form-item">
-                    
                     <div class="form-input">
                         <label for="taikhoan">Tài khoản</label>
                         <input type="text" name="taikhoan" id="taikhoan" placeholder="Nhập tài khoản" runat="server"/>
@@ -48,12 +47,18 @@
                     <span class="form-message" id="errorusername" runat="server"></span>
                 </div>
                 <div class="form-item">
-                    
                     <div class="form-input">
                         <label for="matkhau">Mật khẩu</label>
                         <input type="password" name="matkhau" id="matkhau" placeholder="Nhập mật khẩu"/>
                     </div>
                     <span class="form-message" id="errorpassword" runat="server"></span>
+                </div>
+                <div class="form-item">
+                    <div class="form-input">
+                        <label for="confirmcode">Mã xác nhận</label>
+                        <input type="text" name="confirmcode" id="confirmcode" placeholder="Nhập mã xác nhận" />
+                    </div>
+                    <span class="form-message" id="errorconfirm" runat="server"></span>
                 </div>
 
                 <div class="form-submit">

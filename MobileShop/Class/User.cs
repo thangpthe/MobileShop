@@ -7,7 +7,7 @@ namespace MobileShop.Class
 {
     public class User
     {
-        string hoTen, sdt, diaChi,taiKhoan,matKhau;
+        string hoTen, sdt, diaChi,taiKhoan,matKhau,maXacNhan;
         public string HoTen { 
             get { return hoTen; } 
             set { hoTen = value; }
@@ -32,6 +32,12 @@ namespace MobileShop.Class
         {
             get { return matKhau; }
             set { matKhau = value; }
+        }
+
+        public string MaXacNhan
+        {
+            get { return maXacNhan; }
+            set { maXacNhan = value; }
         }
     }
 }

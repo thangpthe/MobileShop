@@ -23,6 +23,7 @@ namespace MobileShop
             ad.DiaChi = "admin";
             ad.TaiKhoan = "admin";
             ad.MatKhau = "admin";
+            ad.MaXacNhan = "MaXaC";
             userList.Add(ad);
 
             //Người dùng 1
@@ -32,6 +33,7 @@ namespace MobileShop
             u1.DiaChi = "Thanh Xuân";
             u1.TaiKhoan = "thethang";
             u1.MatKhau = "thethang";
+            u1.MaXacNhan = "TheTH";
             userList.Add(u1);
 
             //Người dùng 2
@@ -41,6 +43,7 @@ namespace MobileShop
             u2.Sdt = "0123456789";
             u2.TaiKhoan = "vanphuc";
             u2.MatKhau = "vanphuc";
+            u2.MaXacNhan = "VanPH";
             userList.Add(u2);
             Application["Users"] = userList;
 

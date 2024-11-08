@@ -23,6 +23,7 @@ namespace MobileShop
                 string address = Request.Form["diachi"];
                 string tk = Request.Form["taikhoan"];
                 string mk = Request.Form["matkhau"];
+                string maXacNhan = Request.Form["confirmcode"];
                 bool check = false;
                 // Kiểm tra xem tài khoản đã tồn tại chưa
                 foreach(User user in userList)
@@ -45,6 +46,7 @@ namespace MobileShop
                     u1.DiaChi = address;
                     u1.TaiKhoan = tk;
                     u1.MatKhau = mk;
+                    u1.MaXacNhan = maXacNhan;
                     userList.Add(u1);
                     Application["Users"] = userList;
                     Response.Redirect("DangNhap.aspx");

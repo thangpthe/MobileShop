@@ -96,7 +96,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="AdminSP.aspx" id="adminsp" runat="server"></a>
+                                <a href="AdminSP.aspx">Admin</a>
                             </li>
                         </ul>
                     </div>

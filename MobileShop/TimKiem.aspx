@@ -115,6 +115,7 @@
         </header>
         <main>
             <div class="container">
+                <h1>Kết quả tìm kiếm</h1>
                 <asp:Label id="resultLabel" Text="" runat="server"></asp:Label>
                 <div id="searchList" runat="server">
 
